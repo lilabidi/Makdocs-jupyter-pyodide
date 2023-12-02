@@ -1,4 +1,4 @@
-site_name: "Exp2 : MkDocs+Pyodide"
+site_name: "Mkdocs Jupyter Pyodide"
 site_url: https://ens-fr.gitlab.io/exp2
 repo_url: https://gitlab.com/ens-fr/exp2
 edit_uri: tree/main/docs/
@@ -7,23 +7,26 @@ docs_dir: docs
 
 nav:
   - "🏡 Accueil": index.md
-  - ... | regex=^(?:(?!_REM.md).)*$
+  #- ... | regex=^(?:(?!_REM.md).)*$
+  - ide: ide.md
+  - maths: maths.md
+  - Mermaid: mermaid.md
   - notebook: notebook.ipynb
 
 
 theme:
+    name: material
     favicon: images/favicon.ico
     icon:
       logo: material/application-variable
 
     custom_dir: my_theme_customizations/
 
-    name: material
     font: false                     # RGPD ; pas de fonte Google
     language: fr                    # français
     palette:                        # Palettes de couleurs jour/nuit
       - media: "(prefers-color-scheme: light)"
-        scheme: default
+        scheme: slate
         primary: indigo
         accent: indigo
         toggle:
@@ -39,9 +42,12 @@ theme:
     features:
         - navigation.instant
         - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.tracking
         - navigation.top
         - toc.integrate
-        - header.autohide
+
 
 
 markdown_extensions:
@@ -76,9 +82,11 @@ markdown_extensions:
     - pymdownx.emoji:               # Émojis  :boom:
         emoji_index:     !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
+    
 
 
     - pymdownx.superfences:
+        preserve_tabs: true
         custom_fences:
           - name: mermaid
             class: mermaid
@@ -104,17 +112,18 @@ extra:
 
 plugins:
   - search
-  - exclude-search:           # exclusion de pages de la recherche
-      exclude:
-        - N*/*/*/*.md         # les REM
-        - N*/*/*/*.py         # Les corrigés
-        - xtra/*.md           # inutile de chercher cela
-  - awesome-pages:
-        collapse_single_pages: true
+  #- exclude-search:           # exclusion de pages de la recherche
+      #exclude:
+        #- N*/*/*/*.md         # les REM
+        #- N*/*/*/*.py         # Les corrigés
+        #- xtra/*.md           # inutile de chercher cela
+  #- awesome-pages:
+        #collapse_single_pages: true
   - macros
 
 extra_javascript:
   - xtra/config.js                    # MathJax
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - xtra/interpreter.js
 
