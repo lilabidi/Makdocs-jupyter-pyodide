@@ -8,6 +8,7 @@ docs_dir: docs
 nav:
   - "🏡 Accueil": index.md
   - ... | regex=^(?:(?!_REM.md).)*$
+  - notebook: notebook.ipynb
 
 
 theme:
@@ -92,11 +93,13 @@ markdown_extensions:
         toc_depth: 3
 
 extra:
-    social:
-        - icon: fontawesome/brands/discourse
-          link: https://mooc-forums.inria.fr/moocnsi/
-          name: Le forum des enseignants de NSI
-    site_url: https://e-nsi.gitlab.io/exp2/
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/lilabidi
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/EddyLabidi
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/eddylabidi/
 
 
 plugins:
