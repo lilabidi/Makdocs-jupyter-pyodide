@@ -35,8 +35,8 @@ plugins:
   - mkdocs-jupyter
   - search
   - macros
-  - awesome-pages
-      collapse_single_pages: true
+  #- awesome-pages
+      #collapse_single_pages: true
   - exclude-search # exclusion de pages de la recherche
       exclude:
         - N*/*/*/*.md         # les REM
