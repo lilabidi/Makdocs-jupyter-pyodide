@@ -26,7 +26,7 @@ theme:
     language: fr                    # français
     palette:                        # Palettes de couleurs jour/nuit
       - media: "(prefers-color-scheme: light)"
-        scheme: slate
+        scheme: default
         primary: indigo
         accent: indigo
         toggle:
