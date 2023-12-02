@@ -37,23 +37,23 @@ plugins:
   - mkdocs-jupyter
   - search
   - macros
-  #- awesome-pages
-      #collapse_single_pages: true
-  #- exclude-search # exclusion de pages de la recherche
-      #exclude:
-        #- N*/*/*/*.md         # les REM
-        #- N*/*/*/*.py         # Les corrigés
-        #- xtra/*.md           # inutile de chercher cela
+  - awesome-pages
+      collapse_single_pages: true
+  - exclude-search # exclusion de pages de la recherche
+      exclude:
+        - N*/*/*/*.md         # les REM
+        - N*/*/*/*.py         # Les corrigés
+        - xtra/*.md           # inutile de chercher cela
 
   
-#extra_javascript:
-  #- xtra/config.js                    # MathJax
-  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  #- xtra/interpreter.js
+extra_javascript:
+  - xtra/config.js                    # MathJax
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - xtra/interpreter.js
 
-#extra_css:
-  #- xtra/pyoditeur.css
-  #- xtra/ajustements.css                      # ajustements
+extra_css:
+  - xtra/pyoditeur.css
+  - xtra/ajustements.css                      # ajustements
 
 extra:
   social:
