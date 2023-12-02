@@ -31,19 +31,19 @@ nav:
     - Home: index.md
     - Pyodide: ide.md
     - Maths: maths.md
-    - Mermail: mermail.md
+    - Mermail: mermaid.md
 
 plugins:
   - mkdocs-jupyter
   - search
   - macros
-  - awesome-pages
-      collapse_single_pages: true
-  - exclude-search # exclusion de pages de la recherche
-      exclude:
-        - N*/*/*/*.md         # les REM
-        - N*/*/*/*.py         # Les corrigés
-        - xtra/*.md           # inutile de chercher cela
+  #- awesome-pages
+      #collapse_single_pages: true
+  #- exclude-search # exclusion de pages de la recherche
+      #exclude:
+        #- N*/*/*/*.md         # les REM
+        #- N*/*/*/*.py         # Les corrigés
+        #- xtra/*.md           # inutile de chercher cela
 
   
 extra_javascript:
