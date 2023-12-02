@@ -29,6 +29,7 @@ theme:
 
 nav:
     - Home: index.md
+    - Pyodide : ide.md
 
 plugins:
   - mkdocs-jupyter
