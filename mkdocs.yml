@@ -29,7 +29,8 @@ theme:
 
 nav:
     - Home: index.md
-    - Pyodide : ide.md
+    - Pyodide: ide.md
+    - Maths: maths.md
 
 plugins:
   - mkdocs-jupyter
@@ -37,11 +38,11 @@ plugins:
   - macros
   #- awesome-pages
       #collapse_single_pages: true
-  - exclude-search # exclusion de pages de la recherche
-      exclude:
-        - N*/*/*/*.md         # les REM
-        - N*/*/*/*.py         # Les corrigés
-        - xtra/*.md           # inutile de chercher cela
+  #- exclude-search # exclusion de pages de la recherche
+      #exclude:
+        #- N*/*/*/*.md         # les REM
+        #- N*/*/*/*.py         # Les corrigés
+        #- xtra/*.md           # inutile de chercher cela
 
   
 extra_javascript:
