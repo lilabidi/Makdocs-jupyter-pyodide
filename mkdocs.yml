@@ -8,10 +8,15 @@ docs_dir: docs
 nav:
   - "🏡 Accueil": index.md
   #- ... | regex=^(?:(?!_REM.md).)*$
+  - page test: Test_page.md
   - ide: ide.md
   - maths: maths.md
   - Mermaid: mermaid.md
   - notebook: notebook.ipynb
+  - chapitre2:
+      intro python: 02_chapitre_2/1_intro_python.md
+      fonction: 02_chapitre_2/2_fonction.md
+      Liste: 02_chapitre_2/3_liste.md
 
 
 theme:
@@ -95,7 +100,12 @@ markdown_extensions:
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
 
-
+    - pymdownx.superfences:
+        custom_fences:
+          - name: python
+            class: python
+            validator: !!python/name:markdown_exec.validator
+            format: !!python/name:markdown_exec.formatter
 
     - pymdownx.arithmatex:
         generic: true
@@ -115,17 +125,24 @@ extra:
 
 plugins:
   - search
+  - markdown-exec
   - awesome-pages:
         collapse_single_pages: true
   - macros
   - tags:
       tags_file: tags.md
+  
 
 
 extra_javascript:
   - xtra/javascripts/mathjax-config.js                    # MathJax
   #- https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  
+  - https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js
+  - https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+
 
 extra_css:
   - xtra/stylesheets/qcm.css ##

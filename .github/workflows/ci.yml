@@ -26,6 +26,7 @@ jobs:
       - run: pip install mkdocs-macros-plugin
       - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install selenium
+      - run: pip install markdown-exec
       - run: pip install mkdocs-exclude-search
 
 

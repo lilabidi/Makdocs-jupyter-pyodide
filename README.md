@@ -1,4 +1,4 @@
-# Makdocs-jupyter-pyodide
+# Makdocs-jupyter-pyodide - Version BETA non opérationnelle!!!!!
 
 * Objectif du repo est de proposer un site inetégrant les fichiers Python & Notebook Jupyter avec IDE
 
