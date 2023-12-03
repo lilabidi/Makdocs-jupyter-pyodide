@@ -7,12 +7,8 @@ docs_dir: docs
 
 nav:
   - "🏡 Accueil": index.md
-  #- ... | regex=^(?:(?!_REM.md).)*$
-  - page test: Test_page.md
-  - ide: ide.md
-  - maths: maths.md
-  - Mermaid: mermaid.md
-  - notebook: notebook.ipynb
+  - notebook: 
+      Mon Notebook: notebook.ipynb
   - chapitre2:
       intro python: 02_chapitre_2/1_intro_python.md
       fonction: 02_chapitre_2/2_fonction.md
